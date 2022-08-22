@@ -1,0 +1,36 @@
+/*#include <stdio.h>
+#include <stdlib.h>
+
+int n;
+int cnt=1;
+
+void f(int k){
+    if(k == n) return;
+    f(k+1);
+    printf("%d ", cnt);
+    cnt++;
+}
+int main()
+{
+    scanf("%d", &n);
+    f(0);
+
+    return 0;
+}*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int n;
+
+void f(int k){
+    if(n<=0) return;
+    f(n-1)
+    printf("%d ",n);
+}
+int main()
+{
+    scanf("%d", &n);
+    f(n);
+
+    return 0;
+}
